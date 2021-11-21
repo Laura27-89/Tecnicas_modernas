@@ -13,17 +13,13 @@ class InputsPage extends Page {
     }
 
     get getInput() {
-        return $('#content').click();
+        return $('#content > div > div > div > input[type=number]');
 
     }
 
-    setEnterNumber(number){
-        return this.getInput.getNumber(number);
+    setEnterNumber(){
+        return this.getInput.setValue(78);
     }
-
-//     setInputsValuebyInput(input){
-//         return this.getInput.selectByInput(input);
-//     }
 
     currentInput(){
          return $('#content > div > div > div > input[type=number]');

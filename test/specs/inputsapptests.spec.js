@@ -29,7 +29,7 @@ describe('My Inputs App', () => {
 
     it('Should set a number', async () => {
         console.log('third test');
-        await InputsPage.setEnterNumber(1);
-        await expect(InputsPage.currentInput()).setEnterNumber();
+        await InputsPage.setEnterNumber();
+        expect(InputsPage.currentInput()).toHaveTextContaining(78);
     });
 });
